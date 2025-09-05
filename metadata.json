@@ -1,0 +1,7 @@
+{
+  "name": "Copy of MayaShakti - The Digital Guardian",
+  "description": "An AI-powered web application that serves as a digital guardian, channeling the spirit of Maya and Shakti to dissolve misinformation and resolve user grievances using the Gemini API.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

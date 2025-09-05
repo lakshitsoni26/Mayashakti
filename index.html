@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🕉️ MayaShakti - The Digital Guardian</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Hind:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #281c1c;
+      --text-color: #e0d7d1;
+      --primary-gold: #ffc107;
+      --primary-maroon: #8c2a3e;
+      --border-color: rgba(255, 193, 7, 0.3);
+      --vedic-gold: #ffc107;
+      --sacred-red: #c53030;
+      --saffron: #f59e0b;
+    }
+    body {
+      font-family: 'Hind', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      background-image:
+        radial-gradient(circle at 50% 50%, rgba(140, 42, 62, 0.15), transparent 70%),
+        url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"%3E%3Cdefs%3E%3Cpattern id="p" width="100" height="100" patternUnits="userSpaceOnUse"%3E%3Cpath d="M50 0 L100 50 L50 100 L0 50 Z" fill="%239C92AC" fill-opacity="0.03"/%3E%3Cpath d="M25 25 L75 25 L75 75 L25 75 Z" fill="%239C92AC" fill-opacity="0.02"/%3E%3Cpath d="M0 0 L100 0 L100 100 L0 100 Z" stroke="%239C92AC" stroke-width="1" stroke-opacity="0.04" fill="none"/%3E%3C/pattern%3E%3C/defs%3E%3Crect width="100" height="100" fill="url(%23p)"/%3E%3C/svg%3E');
+    }
+    h1, h2, h3, h4, h5, h6, .font-cinzel {
+      font-family: 'Cinzel Decorative', serif;
+    }
+    .golden-gradient-text {
+      background: linear-gradient(90deg, #ffc107, #ffdb58, #ffeb99);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+    .analysis-grid {
+        position: absolute;
+        inset: 0;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        background-color: rgba(0,0,0,0.1);
+    }
+    .analysis-grid::before,
+    .analysis-grid::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-size: 40px 40px;
+        opacity: 0;
+        animation-fill-mode: forwards;
+    }
+    .analysis-grid::before {
+        background-image:
+            linear-gradient(to right, var(--grid-color, rgba(255, 193, 7, 0.3)) 1px, transparent 1px),
+            linear-gradient(to bottom, var(--grid-color, rgba(255, 193, 7, 0.3)) 1px, transparent 1px);
+        animation: draw-grid 1.2s ease-out;
+    }
+    .analysis-grid::after {
+        background-image:
+            linear-gradient(45deg, var(--grid-color, rgba(255, 193, 7, 0.2)) 1px, transparent 1px),
+            linear-gradient(-45deg, var(--grid-color, rgba(255, 193, 7, 0.2)) 1px, transparent 1px);
+        animation: draw-diagonals 1s 0.5s ease-out;
+    }
+    @keyframes draw-grid {
+        0% {
+            opacity: 1;
+            transform: scale(0);
+        }
+        100% {
+            opacity: 0.7;
+            transform: scale(1);
+        }
+    }
+    @keyframes draw-diagonals {
+        0% {
+            opacity: 1;
+            clip-path: circle(0% at 50% 50%);
+        }
+        100% {
+            opacity: 0.7;
+            clip-path: circle(75% at 50% 50%);
+        }
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.17.0",
+    "three": "https://cdn.skypack.dev/three@0.132.2",
+    "d3": "https://cdn.skypack.dev/d3@7.8.5",
+    "d3-geo": "https://cdn.skypack.dev/d3-geo@3.1.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
