@@ -1,6 +1,7 @@
 <div align="center">
 
-<img src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" alt="MayaShakti Banner" />
+<img width="512" height="512" alt="1757008691983-d2c48c28-c572-4ba7-a199-45af6a9c0e62" src="https://github.com/user-attachments/assets/eedf09af-160b-4035-aac1-8b036d079d1f"  alt="MayaShakti Banner" />
+
 
 # MayaShakti - The Digital Guardian 🕉️
 
