@@ -21,10 +21,8 @@
 
 ### 🎬 Project Demo
 
-*(It is highly recommended to create a short GIF of your application in action and place it here. You can use tools like Giphy Capture or Kap to record your screen.)*
-
 <div align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3gwNmV5cDYza3A3dGg3N2ViemR6ZmpuN2NrdjVtcXU0NHNoMGRiZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L1R1tvI9svkIWwpY2n/giphy.gif" alt="Project Demo GIF" width="80%"/>
+<a href="https://youtu.be/FZJE4DZVQZY">Demo video</a>
 </div>
 
 ---
